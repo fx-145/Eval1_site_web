@@ -14,6 +14,15 @@ html {
   font-size: 7vh;
 }
 
+/* réglages couleur sur barre de navigation*/
+.nav.navbar-nav {
+  color: #fff;
+}
+
+.nav.navbar-nav a:hover {
+  color: grey;
+}
+
 @media screen and (min-width: 640px) {
   .text, .titre {
     /* réglages à partir de 640px et + : même police et taille un peu plus grande. */
@@ -22,21 +31,24 @@ html {
 }
 @media screen and (min-width: 768px) {
   .text, .titre {
-    /* réglages à partir de 640px et + : même police et taille un peu plus grande. */
+    /* réglages à partir de 768px et + : même police et taille un peu plus grande. */
     font-size: 0.9rem;
   }
 }
 @media screen and (min-width: 320px) {
   .text, .titre {
-    /* réglages à partir de 640px et + : même police et taille plus petite. */
+    /* réglages à partir de 320px et + : même police et taille plus petite. */
     font-size: 0.8rem;
     float: right;
+  }
+  .entete {
+    vertical-align: center;
   }
 }
 /* réglages à partir de 640px et + : ajustememt du viewport et hauteur de ligne */
 @media screen and (min-width: 640px) {
   .titre {
-    font-size: 9vh;
+    font-size: 5vh;
     line-height: 0.8em;
   }
 }
@@ -53,7 +65,7 @@ html {
   position: relative;
   background: #222f3e;
   color: #feca57;
-  margin-bottom: 150px;
+  margin-bottom: 200px;
   width: 100%;
   height: 100px;
 }

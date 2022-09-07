@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>page 2</title>
+    <!-- Affichage barre de navigation -->
 <link rel="stylesheet" 
   href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" 
   integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" 
@@ -12,35 +13,41 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
       <div class="container-fluid">
-        <a class="navbar-brand title" href="file:///C:/Users/Fx/Desktop/Studi/Front%20End/HTML/Evaluation%201/Eval1_site_web/asso_astronomie_caen_pg1.html">Association Astronomie Caen</a>
+        <a class="navbar-brand title" href="./asso_astronomie_caen_pg1.html">Association Astronomie Caen</a>
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="file:///C:/Users/Fx/Desktop/Studi/Front%20End/HTML/Evaluation%201/Eval1_site_web/asso_astronomie_caen_pg1.html#"
-                >Accueil</a
-              >
+              <a class="nav-link active" aria-current="page" href="./asso_astronomie_caen_pg1.html#"
+                >Accueil</a>
+              
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="ile:///C:/Users/Fx/Desktop/Studi/Front%20End/HTML/Evaluation%201/Eval1_site_web/asso_astronomie_caen_pg2.html">Evénements</a>
+              <a class="nav-link" href="./asso_astronomie_caen_pg2.html">Evénements</a>
             </li>
           </ul>
         </div>
+        <!-- Affichage du bouton "nous contacter" -->
         <form class="d-flex">
           <button class="btn btn-sm btn btn-success" data-bs-toggle="modal" data-bs-target="#contactModal" type="button">Nous contacter</button>
         </form>
       </div>
     </nav>
+    <!-- Affichage du titre dans barre en orange sur fond noir -->
+    <h1 class=" header titre"> Association astronomie Caen</h1>
+
+    <!-- insertion du fil d'ariane "breadcrumb" -->
     <main class="container">
       <div class="row mt-3">
         <nav class="col-12" aria-label="breadcrumb">
           <ol class="breadcrumb">
-            <li class="breadcrumb-item active"><a href="file:///C:/Users/Fx/Desktop/Studi/Front%20End/HTML/Evaluation%201/Eval1_site_web/asso_astronomie_caen_pg1.html">Accueil</a></li>
+            <li class="breadcrumb-item active"><a href="./asso_astronomie_caen_pg1.html">Accueil</a></li>
             <li class="breadcrumb-item active" aria-current="page">
               Evénements
             </li>
           </ol>
         </nav>
       </div>
+      <!-- disposition des cartes -->
       <section>
         <h2>Mes articles</h2>
         <div class="row row-cols-1 row-cols-sm-2">

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <!-- meta données pour le référencement du site web  -->
+    <!-- meta données pour le référencement du site web -->
     <title>Association astronomie Caen</title>
     <meta charset="utf-8" />
-    <meta name="description" content="Association pour l'étude et la pratique de l'astronomie à Caen et ses environs. Accès pour tous âges" />
+    <meta name="description" content="Association pour l'étude et la pratique de l'astronomie à Caen et ses environs. Accès pour tous, à tous âges" />
 
-     <!-- Affichage barre de navigation  -->
+     <!-- Affichage barre de navigation -->
 <link rel="stylesheet" 
   href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" 
   integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" 
@@ -16,21 +16,22 @@
   </head>
  
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
       <div class="container-fluid">
         <a class="navbar-brand title" href="#">Association Astronomie Caen</a>
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav">
             <li class="nav-text">
-              <a class="nav-link active" aria-current="page" href="file:///C:/Users/Fx/Desktop/Studi/Front%20End/HTML/Evaluation%201/Eval1_site_web/asso_astronomie_caen_pg1.html"
+              <a class="nav-link active" aria-current="page" href="./asso_astronomie_caen_pg1.html"
                 >Accueil</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="file:///C:/Users/Fx/Desktop/Studi/Front%20End/HTML/Evaluation%201/Eval1_site_web/asso_astronomie_caen_pg2.html#">Evénements</a>
+              <a class="nav-link" href="./asso_astronomie_caen_pg2.html#">Evénements</a>
             </li>
+            
           </ul>
         </div>
-        <!-- Affichage du bouton "nous contacter"-->
+        <!-- Affichage du bouton "nous contacter" class="nav-link "--> 
         <form class="d-flex">
           <button class="btn btn-sm btn btn-success" data-bs-toggle="modal" data-bs-target="#contactModal" type="button">nous contacter</button>
         </form>
@@ -38,34 +39,67 @@
     </nav>
     <!-- Affichage du titre dans barre en orange sur fond noir -->
     <h1 class=" header titre"> Association astronomie Caen</h1>
+    
+     <!-- Affichage menu de navigation lorsque taille ecran mobile -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#">Association Astronomie Caen</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Affichage du bouton "nous contacter" class="nav-link " 
+        <form class="d-flex">
+          <button class="btn btn-sm btn btn-success" data-bs-toggle="modal" data-bs-target="#contactModal" type="button">nous contacter</button>
+        </form>--> 
+
+
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="./asso_astronomie_caen_pg1.html">Accueil</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="./asso_astronomie_caen_pg2.html">Evénements</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="mailto:votreadresse@mail.fr">Nous contacter</a>
+                  </li>
+              </ul>
+              
+          </div>
+      </div>
+  </nav>
+
+    <!-- insertion du fil d'ariane "breadcrumb" -->
     <main class="container">
-      <!-- insertion du fil d'ariane "breadcrumb"  -->
       <div class="row mt-3">
         <nav class="col-12" aria-label="breadcrumb">
           <ol class="breadcrumb">
-            <li class="breadcrumb-item active "><a href="file:///C:/Users/Fx/Desktop/Studi/Front%20End/HTML/Evaluation%201/Eval1_site_web/asso_astronomie_caen_pg1.html">Accueil</a></li>
+            <li class="breadcrumb-item active "><a href="./asso_astronomie_caen_pg1.html">Accueil</a></li>
             <li class="breadcrumb-item active" aria-current="page">
               Evénements
             </li>
           </ol>
         </nav>
       </div>
-      <!-- disposition des cartes-->
+      <!-- disposition des cartes -->
       <section>
         <h2>Présentation: qui sommes-nous, que faisons-nous?</h2>
         <div class="row row-cols-1 row-cols-sm-3 text">
           <article class="col p-2">
-            <!-- Carte 1(éclipse) présentation de l'association: qui sommes-nous?-->
+            <!-- Carte 1(éclipse) présentation de l'association: qui sommes-nous? -->
             <div class="card">
               <img
-                src="C:\Users\Fx\Desktop\Studi\Front End\HTML\Evaluation 1\Eval1_site_web\eclipse-gf21b6cbfc_1920.jpg"
+                src=".\eclipse-gf21b6cbfc_1920.jpg"
                 class="card-img-top rounded-3"
                 alt=""
               />
               <div class="card-body">
                 <h5 class="card-title">Qui sommes-nous?</h5>
                 <p class="card-text">
-                  L'association Astronomie Caen est à but non lucratif, 
+                  L'association Astronomie Caen fondée en 1953 est à but non lucratif, 
                   nos membres sont de tous âges et de tous horizons. 
                   Nous partageons une passion commune, 
                   celle de l'étude et de l'observation des astres célestes.
@@ -78,7 +112,7 @@
             <!-- Carte 2(télescope) présentation de l'association: que faisons-nous? -->
             <div class="card">
               <img
-                src="C:\Users\Fx\Desktop\Studi\Front End\HTML\Evaluation 1\Eval1_site_web\telescope-gf9a520312_1920.jpg"
+                src=".\telescope-gf9a520312_1920.jpg"
                 class="card-img-top rounded-3"
                 alt=""
               />
@@ -96,14 +130,14 @@
             <!-- Carte 3(earth) présentation de l'association: notre réseau -->
             <div class="card">
               <img
-                src="C:\Users\Fx\Desktop\Studi\Front End\HTML\Evaluation 1\Eval1_site_web\earth-g1ca8842df_1920.jpg"
+                src=".\earth-g1ca8842df_1920.jpg"
                 class="card-img-top rounded-3"
                 alt=""
               />
               <div class="card-body">
                 <h5 class="card-title">Nos liens avec la communauté internationale des astronomes amateurs</h5>
                 <p class="card-text">
-                  Notre association fondée en 1953 a tissé de nombreux liens amicaux dans le monde,
+                  Notre association a tissé de nombreux liens amicaux dans le monde,
                   Nous partageons nos études, nos observations et nos découvertes avec de nombreuses
                   autres associations d'astronomie présentes sur tous les continents.
                 </p>
@@ -111,10 +145,10 @@
               </div>
             </div>
           </article>
-        </div>
+         </div>
       </section>
     </main>
-    <!-- insertion de la fenetre modale sur bouton" nous contacter"  -->
+    <!-- insertion de la fenetre modale sur bouton" nous contacter" -->
     <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
           <div class="modal-content">
