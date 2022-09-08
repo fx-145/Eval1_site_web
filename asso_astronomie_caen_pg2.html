@@ -11,27 +11,31 @@
 <link rel="stylesheet" href="style.css"/>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+     <!-- Affichage menu de navigation lorsque taille ecran mobile -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
       <div class="container-fluid">
-        <a class="navbar-brand title" href="./asso_astronomie_caen_pg1.html">Association Astronomie Caen</a>
-        <div class="collapse navbar-collapse">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./asso_astronomie_caen_pg1.html#"
-                >Accueil</a>
+          <a class="navbar-brand" href="#">Association Astronomie Caen</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+                  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="./asso_astronomie_caen_pg1.html">Accueil</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="./asso_astronomie_caen_pg2.html">Evénements</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="mailto:votreadresse@mail.fr">Nous contacter</a>
+                  </li>
+              </ul>
               
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./asso_astronomie_caen_pg2.html">Evénements</a>
-            </li>
-          </ul>
-        </div>
-        <!-- Affichage du bouton "nous contacter" -->
-        <form class="d-flex">
-          <button class="btn btn-sm btn btn-success" data-bs-toggle="modal" data-bs-target="#contactModal" type="button">Nous contacter</button>
-        </form>
+          </div>
       </div>
-    </nav>
+  </nav>
     <!-- Affichage du titre dans barre en orange sur fond noir -->
     <h1 class=" header titre"> Association astronomie Caen</h1>
 
