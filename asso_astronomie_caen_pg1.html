@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="description" content="Association pour l'étude et la pratique de l'astronomie à Caen et ses environs. Accès pour tous, à tous âges" />
 
-     <!-- Affichage barre de navigation -->
+     <!-- Affichage barre de navigation avec bootstrap -->
 <link rel="stylesheet" 
   href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" 
   integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" 
@@ -51,7 +51,7 @@
       <div class="row mt-3">
         <nav class="col-12" aria-label="breadcrumb">
           <ol class="breadcrumb">
-            <li class="breadcrumb-item active "><a href="./asso_astronomie_caen_pg1.html">Accueil</a></li>
+            <li class="breadcrumb-item"><a href="./asso_astronomie_caen_pg1.html">Accueil</a></li>
             <li class="breadcrumb-item active" aria-current="page">
               Evénements
             </li>
@@ -63,12 +63,13 @@
         <h2>Présentation: qui sommes-nous, que faisons-nous?</h2>
         <div class="row row-cols-1 row-cols-sm-3 text">
           <article class="col p-2">
-            <!-- Carte 1(éclipse) présentation de l'association: qui sommes-nous? -->
+            <!-- Carte 1(éclipse) présentation de l'association: qui sommes-nous? <a href="#" class="btn btn-secondary">Lire la suite...</a>-->
             <div class="card">
               <img
                 src=".\eclipse-gf21b6cbfc_1920.jpg"
                 class="card-img-top rounded-3"
                 alt=""
+                width="500" height="300"
               />
               <div class="card-body">
                 <h5 class="card-title">Qui sommes-nous?</h5>
@@ -78,7 +79,9 @@
                   Nous partageons une passion commune, 
                   celle de l'étude et de l'observation des astres célestes.
                 </p>
-                <a href="#" class="btn btn-secondary">Lire la suite...</a>
+                <!-- affichage du texte caché avec bouton" lire la suite"  -->
+                <a href="#cache" class="btn btn-secondary">Lire la suite...</a>
+                <div id="cache">La suite du texte carte 1<a href=""> [Voir moins]</a></div> 
               </div>
             </div>
           </article>
@@ -89,6 +92,7 @@
                 src=".\telescope-gf9a520312_1920.jpg"
                 class="card-img-top rounded-3"
                 alt=""
+                width="500" height="300"
               />
               <div class="card-body">
                 <h5 class="card-title">Que faisons-nous?</h5>
@@ -96,7 +100,9 @@
                   Nous organisons des soirées thématiques pour partager et approfondir nos connaissances des objets célestes.
                   Et des stages pratiques d'observation du cosmos. L'association possède 2 lunettes astronomiques et  1 téléscope.
                 </p>
-                <a href="#" class="btn btn-secondary">Lire la suite...</a>
+                <!-- affichage du texte caché avec bouton" lire la suite"  -->
+                <a href="#cache2" class="btn btn-secondary">Lire la suite...</a>
+                <div id="cache2">La suite du texte carte 2<a href=""> [Voir moins]</a></div>
               </div>
             </div>
           </article>
@@ -107,6 +113,7 @@
                 src=".\earth-g1ca8842df_1920.jpg"
                 class="card-img-top rounded-3"
                 alt=""
+                width="500" height="300"
               />
               <div class="card-body">
                 <h5 class="card-title">Nos liens avec la communauté internationale des astronomes amateurs</h5>
@@ -115,7 +122,9 @@
                   Nous partageons nos études, nos observations et nos découvertes avec de nombreuses
                   autres associations d'astronomie présentes sur tous les continents.
                 </p>
-                <a href="#" class="btn btn-secondary">Lire la suite...</a>
+                <!-- affichage du texte caché avec bouton" lire la suite"  -->
+                <a href="#cache3" class="btn btn-secondary">Lire la suite...</a>
+                <div id="cache3">La suite du texte carte 3<a href=""> [Voir moins]</a></div>
               </div>
             </div>
           </article>

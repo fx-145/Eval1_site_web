@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>page 2</title>
-    <!-- Affichage barre de navigation -->
+    <!-- Affichage barre de navigation avec bootstrap-->
 <link rel="stylesheet" 
   href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" 
   integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" 
@@ -22,10 +22,10 @@
                   <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="./asso_astronomie_caen_pg1.html">Accueil</a>
+                      <a class="nav-link" aria-current="page" href="./asso_astronomie_caen_pg1.html">Accueil</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="./asso_astronomie_caen_pg2.html">Evénements</a>
+                      <a class="nav-link active" href="./asso_astronomie_caen_pg2.html">Evénements</a>
                   </li>
 
                   <li class="nav-item">
@@ -44,7 +44,7 @@
       <div class="row mt-3">
         <nav class="col-12" aria-label="breadcrumb">
           <ol class="breadcrumb">
-            <li class="breadcrumb-item active"><a href="./asso_astronomie_caen_pg1.html">Accueil</a></li>
+            <li class="breadcrumb-item"><a href="./asso_astronomie_caen_pg1.html">Accueil</a></li>
             <li class="breadcrumb-item active" aria-current="page">
               Evénements
             </li>
@@ -53,62 +53,70 @@
       </div>
       <!-- disposition des cartes -->
       <section>
-        <h2>Mes articles</h2>
+        <h2>Evénements</h2>
         <div class="row row-cols-1 row-cols-sm-2">
+          <!-- Carte1 Eclipse de lune -->
           <article class="col p-2">
             <div class="card">
               <img
-                src="http://placeimg.com/600/200/arch"
+                src="./Eclipse_lune.jpg"
                 class="card-img-top rounded-3"
                 alt=""
               />
               <div class="card-body">
-                <h5 class="card-title">Lorem ipsum</h5>
+                <h5 class="card-title">Eclipse de lune</h5>
                 <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Pellentesque semper mi est, ac molestie nibh laoreet in.
-                  Pellentesque massa orci, vulputate et condimentum vitae,
-                  pellentesque eget ipsum.
+                  La prochaine éclipse lunaire est prévue le mardi 8 novembre 2022. 
+                  Le début de cette éclipse aura lieu avec l'entrée dans la pénombre à 9h02 (heure de Paris, 8h02 UTC). 
+                  Le maximum de l'éclipse est prévu pour 11h59.
                 </p>
-                <a href="#" class="btn btn-secondary">Lire la suite...</a>
+                <!-- affichage du texte caché avec bouton" lire la suite"  -->
+                <a href="#cache4" class="btn btn-secondary">Lire la suite...</a>
+                <div id="cache4">La suite du texte carte 4<a href=""> [Voir moins]</a></div>
               </div>
             </div>
           </article>
+          <!-- Carte2 Etoiles filantes -->
           <article class="col p-2">
             <div class="card">
               <img
-                src="http://placeimg.com/600/200/arch"
+                src="./etoiles_filantes.jpg"
                 class="card-img-top rounded-3"
                 alt=""
               />
               <div class="card-body">
-                <h5 class="card-title">Lorem ipsum</h5>
+                <h5 class="card-title">Etoiles filantes</h5>
                 <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Pellentesque semper mi est, ac molestie nibh laoreet in.
-                  Pellentesque massa orci, vulputate et condimentum vitae,
-                  pellentesque eget ipsum.
+                  Plusieurs grands rendez-vous stellaires d'étoiles filantes ont lieu durant l'année 2022.
+                   Après les Perséides cet été 2022, on ne manquera pas le phénomène des Orionides observables
+                   entre le 2 octobre et le 7 novembre 2022, 
+                    et dont le pic d'activité a lieu dans la nuit du 20 au 21 octobre. 
                 </p>
-                <a href="#" class="btn btn-secondary">Lire la suite...</a>
+                <!-- affichage du texte caché avec bouton" lire la suite"  -->
+                <a href="#cache5" class="btn btn-secondary">Lire la suite...</a>
+                <div id="cache5">La suite du texte carte 5<a href=""> [Voir moins]</a></div>
               </div>
             </div>
           </article>
+          <!-- Carte3 Conjonctions planetaires -->
           <article class="col p-2">
             <div class="card">
               <img
-                src="http://placeimg.com/600/200/arch"
+                src="./conjonctions_planetes.jpg"
                 class="card-img-top rounded-3"
                 alt=""
               />
               <div class="card-body">
-                <h5 class="card-title">Lorem ipsum</h5>
+                <h5 class="card-title">Conjonctions planétaires</h5>
                 <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Pellentesque semper mi est, ac molestie nibh laoreet in.
-                  Pellentesque massa orci, vulputate et condimentum vitae,
-                  pellentesque eget ipsum.
+                  En septembre 2022, nous aurons la chance de voir la Lune à côté de Saturne, Jupiter et Mars.
+                  Le 8 septembre: conjonction lune-saturne
+                  Le 11 septembre: conjonction lune-jupiter 
+                  Le 17 septembre: conjonction lune-mars 
                 </p>
-                <a href="#" class="btn btn-secondary">Lire la suite...</a>
+                <!-- affichage du texte caché avec bouton" lire la suite"  -->
+                <a href="#cache6" class="btn btn-secondary">Lire la suite...</a>
+                <div id="cache6">La suite du texte carte 6<a href=""> [Voir moins]</a></div>
               </div>
             </div>
           </article>

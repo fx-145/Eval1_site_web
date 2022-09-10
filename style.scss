@@ -20,6 +20,53 @@ html {
     color: grey;
     }
 
+    /* affichage/masquage pg1 card 1"lire la suite"*/
+    #cache {
+      display: none;
+   }
+   #cache:target {
+      display: block;
+   }
+
+   /* affichage/masquage pg1 card 2 "lire la suite"*/
+   #cache2 {
+    display: none;
+ }
+ #cache2:target {
+    display: block;
+ }
+
+ /* affichage/masquage pg1 card 3 "lire la suite"*/
+ #cache3 {
+  display: none;
+}
+#cache3:target {
+  display: block;
+}
+
+/* affichage/masquage pg2 card 4"lire la suite"*/
+#cache4 {
+  display: none;
+}
+#cache4:target {
+  display: block;
+}
+
+/* affichage/masquage pg2 card 5"lire la suite"*/
+#cache5 {
+  display: none;
+}
+#cache5:target {
+  display: block;
+}
+
+/* affichage/masquage pg2 card 6"lire la suite"*/
+#cache6 {
+  display: none;
+}
+#cache6:target {
+  display: block;
+}
 
 @media screen and (min-width: 640px) {
   .text, .titre{
